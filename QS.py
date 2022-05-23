@@ -62,9 +62,9 @@ def job_simulator(clients,windows,window_price, max_time): #Tasks handling
                     price += window_price[3]
         iterations+=1
         satisfied_clients = len_start - len(clients)
-        Iterations_left = []
+        iterations_left = []
         for i in range(len(windows)):                                                                                    #Pętla zbierająca ile każdemu z okienek pozostało iteracji
-            Iterations_left.append(windows[i][1])
+            iterations_left.append(windows[i][1])
         #print(f'|End of iteration {iterations}|____________________________________________')
     return satisfied_clients, price, earnings
     
